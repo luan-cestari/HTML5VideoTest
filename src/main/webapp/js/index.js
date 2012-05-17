@@ -98,7 +98,8 @@ function nextVideo(id){
 
 // ** This other function that work in chain too: after videoN ends to load, the videoN+1 start to load. This way, the video will otimize the loading.
 function loadNextVideoAfterThisLoad(id){
-    if(id <= numVideos){
+    // It was called many times so I inclueded a validation to check if the element was already created
+    if(id <= numVideos && !($('#current_video'+id).length > 0) ){
         var $div_nth_child = $('#result_div_id > div:nth-child('+id+')'); // CSS3 nth-child 
         var valueOGG = $div_nth_child.attr('valueOGG');
         var valueMP4 = $div_nth_child.attr('valueMP4');

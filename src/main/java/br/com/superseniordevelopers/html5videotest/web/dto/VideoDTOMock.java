@@ -37,6 +37,8 @@ public class VideoDTOMock implements VideoDTO {
          */
         urls.add(new VideoHTML5("http://www.w3schools.com/html5/movie.ogg", "http://www.w3schools.com/html5/movie.mp4"));
         urls.add(new VideoHTML5("http://www.808.dk/pics/video/gizmo.ogv", "http://www.808.dk/pics/video/gizmo.mp4"));
+        urls.add(new VideoHTML5("http://www.808.dk/pics/video/gizmo.ogv", "http://www.808.dk/pics/video/gizmo.mp4"));
+        urls.add(new VideoHTML5("http://www.w3schools.com/html5/movie.ogg", "http://www.w3schools.com/html5/movie.mp4"));
         return urls;
     }
 }
